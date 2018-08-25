@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>MeuMedicamento</id>
+    <version>1.0.0</version>
+    <authors>MeuMedicamento</authors>
+    <owners>MeuMedicamento</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Package Description</description>
+    <dependencies>
+      <group targetFramework=".NETStandard2.0">
+        <dependency id="Newtonsoft.Json" version="11.0.2" exclude="Build,Analyzers" />
+        <dependency id="Xamarin.Forms" version="3.1.0.697729" exclude="Build,Analyzers" />
+        <dependency id="sqlite-net-pcl" version="1.4.118" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="C:\Users\Vidoto\source\repos\MeuMedicamento\MeuMedicamento\MeuMedicamento\bin\Debug\netstandard2.0\MeuMedicamento.dll" target="lib\netstandard2.0\MeuMedicamento.dll" />
+  </files>
+</package>

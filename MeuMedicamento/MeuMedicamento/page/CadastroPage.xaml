@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MeuMedicamento.CadastroPage"
+             Title="Cadastro">
+    <ContentPage.Content>
+        <StackLayout Padding="20, 10, 10, 10"
+                     Orientation="Vertical">
+            
+            <Image Source="https://www.vetorsolucoes.com.br/wp-content/uploads/2016/07/capa.png" />
+            <ScrollView >       
+                <StackLayout Padding="10, 10, 10, 10"
+                             Orientation="Vertical">
+                    <Label Text="Nome" 
+                       HorizontalOptions="StartAndExpand"
+                       VerticalOptions="Center" />
+                    <Entry x:Name="nomeEntry" Placeholder="Informe seu nome"/>
+
+                    <Label Text="E-mail" 
+                       HorizontalOptions="StartAndExpand"
+                       VerticalOptions="Center" />
+                    <Entry x:Name="emailEntry" Placeholder="Informe seu e-mail"/>
+
+                    <Label Text="Senha" 
+                       HorizontalOptions="StartAndExpand"
+                       VerticalOptions="Center" />
+                    <Entry x:Name="senhaEntry"
+                           Placeholder="Informe sua senha"
+                           IsPassword="True"/>
+
+                    <Label Text="Confirme sua senha" 
+                       HorizontalOptions="StartAndExpand"
+                       VerticalOptions="Center" />
+                    <Entry x:Name="senhaConfirmeEntry"
+                           Placeholder="Confirme sua senha"
+                           IsPassword="True" />
+
+                    <Button Text="Cadastrar"
+                            VerticalOptions="CenterAndExpand"
+                            HorizontalOptions="Fill"
+                            TextColor="White"
+                            BackgroundColor="#2196F3"
+                            Clicked="OnButtonClicked_Cadastrar"/>
+                </StackLayout>
+            </ScrollView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,157 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MeuMedicamento.DetalheMedicamentoPage"
+             Title="Detalhes medicamento">
+    <ContentPage.Content>
+        <Frame BackgroundColor="#FAFAFA">
+            <StackLayout Padding="10, 0, 0, 0"
+                         Orientation="Vertical"
+                         BackgroundColor="White"
+                         HorizontalOptions="Fill"
+                         VerticalOptions="StartAndExpand">
+
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Produto: "
+                        VerticalOptions="Center" 
+                        HorizontalOptions="Start" 
+                           FontAttributes="Bold"
+                           WidthRequest="100"/>
+                    <Label Text="{Binding Path=Produto}"
+                        VerticalOptions="Center" 
+                        HorizontalOptions="StartAndExpand" />
+                </StackLayout>
+                
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Codigo EAN: "
+                        VerticalOptions="Center" 
+                        HorizontalOptions="Start" 
+                           FontAttributes="Bold"
+                           WidthRequest="100"/>
+                    <Label Text="{Binding Path=CodBarraEan}"
+                        VerticalOptions="Center" 
+                        HorizontalOptions="StartAndExpand" />
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Principio ativo: "
+                        VerticalOptions="Center" 
+                        HorizontalOptions="Start" 
+                           FontAttributes="Bold"
+                           WidthRequest="100"/>
+                    <Label Text="{Binding Path=PrincipioAtivo}"
+                        VerticalOptions="Center" 
+                        HorizontalOptions="StartAndExpand" />
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Laboratório: "
+                        VerticalOptions="Center" 
+                        HorizontalOptions="Start"
+                           FontAttributes="Bold"
+                           WidthRequest="100"/>
+                    <Label Text="{Binding Path=Laboratorio}"
+                        VerticalOptions="Center" 
+                        HorizontalOptions="StartAndExpand" />
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="CNPJ: "
+                        VerticalOptions="Center" 
+                        HorizontalOptions="Start"
+                           FontAttributes="Bold"
+                           WidthRequest="100"/>
+                    <Label Text="{Binding Path=Cnpj}"
+                        VerticalOptions="Center" 
+                        HorizontalOptions="StartAndExpand" />
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Apresentação: "
+                        VerticalOptions="Center" 
+                        HorizontalOptions="Start"
+                           FontAttributes="Bold" 
+                           WidthRequest="100"/>
+                    <Label Text="{Binding Path=Apresentacao}"
+                        VerticalOptions="Center" 
+                        HorizontalOptions="StartAndExpand" />
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Classe terapeutica: "
+                        VerticalOptions="Center" 
+                        HorizontalOptions="Start"
+                           FontAttributes="Bold"
+                           WidthRequest="100" />
+                    <Label Text="{Binding Path=ClasseTerapeutica}"
+                        VerticalOptions="Center" 
+                        HorizontalOptions="StartAndExpand" />
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Restrição hospitalar: "
+                        VerticalOptions="Center" 
+                        HorizontalOptions="Start"
+                           FontAttributes="Bold"
+                           WidthRequest="100" />
+                    <Label Text="{Binding Path=Restricao}"
+                        VerticalOptions="Center" 
+                        HorizontalOptions="StartAndExpand" 
+                           FontAttributes="Bold"/>
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Preço liberado: "
+                        VerticalOptions="Center" 
+                        HorizontalOptions="Start"
+                           FontAttributes="Bold"
+                           WidthRequest="100" />
+                    <Label Text="{Binding Path=PrecoLiberado}"
+                        VerticalOptions="Center" 
+                        HorizontalOptions="StartAndExpand" 
+                           TextColor="Blue"
+                           FontAttributes="Bold"/>
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Preço de fabrica: "
+                        VerticalOptions="Center" 
+                        HorizontalOptions="Start"
+                           FontAttributes="Bold"
+                           WidthRequest="100" />
+                    <Label Text="{Binding Path=Pf0}"
+                        VerticalOptions="Center" 
+                        HorizontalOptions="StartAndExpand" 
+                           TextColor="Red"
+                           FontAttributes="Bold"/>
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Preco maximo ao consumidor: "
+                        VerticalOptions="Center" 
+                        HorizontalOptions="Start"
+                           FontAttributes="Bold" 
+                           WidthRequest="100"/>
+                    <Label Text="{Binding Path=Pmc0}"
+                        VerticalOptions="Center" 
+                        HorizontalOptions="StartAndExpand" 
+                           TextColor="Red"
+                           FontAttributes="Bold"/>
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Data atualização: "
+                        VerticalOptions="Center" 
+                        HorizontalOptions="Start"
+                           FontAttributes="Bold"
+                           WidthRequest="100"/>
+                    <Label Text="{Binding Path=UltimaAlteracao}"
+                        VerticalOptions="Center" 
+                        HorizontalOptions="StartAndExpand"
+                           FontAttributes="Bold" />
+                </StackLayout>
+
+            </StackLayout>
+        </Frame>
+    </ContentPage.Content>
+</ContentPage>

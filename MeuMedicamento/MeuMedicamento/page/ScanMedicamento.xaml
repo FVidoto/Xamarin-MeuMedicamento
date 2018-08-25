@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:view="clr-namespace:MeuMedicamento.view;assembly=MeuMedicamento"
+             x:Class="MeuMedicamento.ScanMedicamento"
+             Title="Codigo">
+    <ContentPage.Content>
+        <StackLayout Padding="10, 10, 10, 10">
+            <Label Text="Informe o codigo EAN do medicamento"
+                   VerticalOptions="CenterAndExpand" 
+                   HorizontalOptions="CenterAndExpand" 
+                   FontSize="Medium"/>
+            <Entry x:Name="entryCodigoMedicamento" Placeholder="Digite o codigo de barras do medicamento"/>
+
+            <Button Text="Pesquisar"
+                    VerticalOptions="CenterAndExpand"
+                    HorizontalOptions="Fill"
+                    TextColor="White"
+                    BackgroundColor="#2196F3" Clicked="OnButtonClicked"/>
+
+            <StackLayout>
+                <ListView x:Name="listView"
+                          Margin="10"
+                          HasUnevenRows="true"
+                          ItemSelected="OnItemSelected" >
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <view:CardViewTemplate/>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

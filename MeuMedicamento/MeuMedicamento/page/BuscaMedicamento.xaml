@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:view="clr-namespace:MeuMedicamento.view;assembly=MeuMedicamento"
+             x:Class="MeuMedicamento.BuscaMedicamento"
+             Title="Nome">
+    <StackLayout Padding="10, 10, 10, 10">
+        <Label Text="Informe o nome do medicamento"
+                   VerticalOptions="CenterAndExpand" 
+                   HorizontalOptions="CenterAndExpand" 
+                   FontSize="Medium"/>
+        <Entry x:Name="entryMedicamento" Placeholder="Digite o nome do medicamento"/>
+
+        <Button Text="Pesquisar"
+                    VerticalOptions="CenterAndExpand"
+                    HorizontalOptions="Fill"
+                    TextColor="White"
+                    BackgroundColor="#2196F3" Clicked="OnButtonClicked"/>
+
+        <StackLayout Orientation="Vertical">
+            <ListView x:Name="listView"
+                      HasUnevenRows="true"
+                      ItemSelected="OnItemSelected" >
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <view:CardViewTemplate/>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </StackLayout>
+</ContentPage>
